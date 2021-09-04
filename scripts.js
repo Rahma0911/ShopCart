@@ -90,8 +90,9 @@ function iconLikeChangeColor(event) {
 }
 
 function updateTotal() {
+    var cartItemContainer = document.getElementsByClassName('product-img')
     var total = 0;
-    for (var i = 0; i <= 3; i++) {
+    for (var i = 0; i < cartItemContainer.length; i++) {
         var priceElement = document.getElementsByClassName('price');
         var p = priceElement[i]
         var quantityElement = document.getElementsByClassName('qty');
