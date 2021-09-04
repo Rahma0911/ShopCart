@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+      <meta charset="UTF-8">
+      <title>Shopping Cart</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+      <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+      <link rel="stylesheet" href="./styles.css">
+   </head>
+   <body>
+        <h2 class="text-center"><ion-icon name="cart"></ion-icon>Shopping Cart</h2>
+        <div class="row justify-content-center">
+           <div class="col-md-8">
+              <div class="table-responsive">
+                 <table id="myTable" class="table">
+                    <thead>
+                       <tr>
+                          <th>Product</th>
+                          <th>Name</th>
+                          <th>Quantity</th>
+                          <th>Price</th>
+                       </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                          <td>
+                             <div class="product-img">
+                                <div class="img-prdct">
+                                    <ion-icon name ="close-circle" class="remove-product"></ion-icon>
+                                   <img src="./images/product1.jpg">
+                                   <a href><ion-icon class="heart" name="heart-circle-outline"></ion-icon></a>
+                                </div>
+                             </div>
+                          </td>
+                          <td>
+                             <p>Product 1</p>
+                          </td>
+                          <td>
+                             <div class="button-container">
+                                <button id="0" class="cart-qty-plus" type="button" value="+">+</button>
+                                <input type="text" name="qty" min="0" class="qty form-control" value="0"/>
+                                <button id="0" class="cart-qty-minus" type="button" value="-">-</button>
+                             </div>
+                          </td>
+                          <td>
+                             <input type="text" value="49" class="price form-control" disabled>
+                          </td>
+                       </tr>
+                       <tr>
+                        <td>
+                           <div class="product-img">
+                              <div class="img-prdct">
+                                <ion-icon name ="close-circle" class="remove-product"></ion-icon>
+                                 <img src="./images/product2.jpg">
+                                 <a href><ion-icon class="heart" name="heart-circle-outline"></ion-icon></a>
+                              </div>
+                           </div>
+                        </td>
+                        <td>
+                           <p>Product 2</p>
+                        </td>
+                        <td>
+                           <div class="button-container">
+                              <button id="1" class="cart-qty-plus" type="button" value="+">+</button>
+                              <input type="text" name="qty" min="0" class="qty form-control" value="0"/>
+                              <button id="1" class="cart-qty-minus" type="button" value="-">-</button>
+                           </div>
+                        </td>
+                        <td>
+                           <input type="text" value="39" class="price form-control" disabled>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div class="product-img">
+                              <div class="img-prdct">
+                                <ion-icon name ="close-circle" class="remove-product"></ion-icon>
+                                 <img src="./images/product3.jpg">
+                                 <a href><ion-icon class="heart" name="heart-circle-outline"></ion-icon></a>
+                              </div>
+                           </div>
+                        </td>
+                        <td>
+                           <p>Product 3</p>
+                        </td>
+                        <td>
+                           <div class="button-container">
+                              <button id="2" class="cart-qty-plus" type="button" value="+">+</button>
+                              <input type="text" name="qty" min="0" class="qty form-control" value="0"/>
+                              <button id="2" class="cart-qty-minus" type="button" value="-">-</button>
+                           </div>
+                        </td>
+                        <td>
+                           <input type="text" value="60" class="price form-control" disabled>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div class="product-img">
+                              <div class="img-prdct">
+                                <ion-icon name ="close-circle" class="remove-product"></ion-icon>
+                                 <img src="./images/product4.jpg">
+                                 <a href><ion-icon class="heart" name="heart-circle-outline"></ion-icon></a>
+                              </div>
+                           </div>
+                        </td>
+                        <td>
+                           <p>Product 4</p>
+                        </td>
+                        <td>
+                           <div class="button-container">
+                              <button id="3" class="cart-qty-plus" type="button" value="+">+</button>
+                              <input type="text" name="qty" min="0" class="qty form-control" value="0"/>
+                              <button id="3" class="cart-qty-minus" type="button" value="-">-</button>
+                           </div>
+                        </td>
+                        <td>
+                           <input type="text" value="26" class="price form-control" disabled>
+                        </td>
+                     </tr>
+                    </tbody>
+                    <tfoot>
+                       <tr>
+                          <td colspan="3"></td>
+                          <td>
+                             <strong>TOTAL = 
+                              <input type="text" value="0" class="total" disabled> DT
+                             </strong>
+                          </td>
+                       </tr>
+                    </tfoot>
+                 </table>
+              </div>
+           </div>
+        </div>
+     </div>
+
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>     
+     <script  src="./scripts.js"></script>
+   </body>
+</html>

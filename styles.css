@@ -1,0 +1,86 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.button-container{
+    display: flex;
+    align-items: center;
+}
+.button-container .form-control{
+    max-width: 80px;
+    text-align: center;
+    display: inline-block;
+    margin: 0px 5px;
+}
+.form-control{
+    max-width: 200px;
+    background-color: none;
+}
+
+#myTable .form-control{
+    width: auto;
+    display: inline-block;
+}
+
+.button-container .cart-qty-plus, .button-container
+.cart-qty-minus{
+    width: 38px;
+    height: 38px;
+    color: white;
+    background-color: orchid;
+    border: none;
+    border-radius: .50rem;
+}
+.cart-qty-plus:hover,
+.cart-qty-minus:hover{
+    background-color: thistle;
+}
+
+.img-prdct{
+    width: 30%;
+    height: 10%;
+    background-color: whitesmoke;
+}
+.img-prdct img{
+    width: 50%;
+}
+.img-prdct ion-icon {
+    font-size: 25px;
+    color: orchid;
+    cursor: pointer;
+}
+.heart{
+    margin-left: 100px;
+}
+
+.img-prdct ion-icon:hover{
+    background-color: thistle;
+}
+
+thead tr{
+    background-color: gray;
+    color: white;
+    text-align: left;
+
+}
+thead th{
+    width: 70%;
+}
+
+input:focus,
+button:focus,
+.form-control:focus, ion-icon:focus{
+    outline: none;
+    box-shadow: none;
+}
+.table tr,
+.table tr td{
+    vertical-align: middle;
+}
+
+
